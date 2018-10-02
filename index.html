@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Survey</title>
+  <link rel="stylesheet" href="stylesheets/styles.css" />
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <div class="container">
+    <p id="description">About Yourself</p>
+    <form id="survey-form">
+      <div>
+      <div>
+        <label for="name" id="name-label">Name </label>
+        <input type="text" id="name" placeholder="Enter Your Name" required/>
+      </div>
+      <div>
+        <label for="email" id="email-label">Email </label>
+        <input type="email" id="email" placeholder="Enter Your Email" required/>
+      </div>
+      <div>
+        <label for="age" id="number-label" placeholder="Enter number from 1 to 100">Age </label>
+        <input type="number" id="number" min="o" max="100" required/>
+      </div>
+    </div>
+
+        <div>
+          <label for="dropdown">Sex </label>
+          <select id="dropdown">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="boolean">Do you like school?</label>
+          <input type="radio" name="boolean" value="yes">Yes
+          <input type="radio" name="boolean" value="no">No
+        </div>
+
+        <div>
+          <label for="major">What's program major that you are interested in?</label>
+          <input type="checkbox" name="major" value="Front End Engineer">Front End Engineer
+          <input type="checkbox" name="major" value="Back End Engineer">Back End Engineer
+          <input type="checkbox" name="major" value="Full Stack Engineer">Full Stack Engineer
+          <input type="checkbox" name="major" value="Data Scientist">Data Scientist
+        </div>
+
+        <div>
+          <label for="comment">Your opinion about being a programmer: </label>
+          <textarea rows="4" col="30" placeholder="Commenting your thought" id="comment"></textarea>
+        </div>
+
+        <div>
+          <button type="submit" id="submit" name="submit">Submit</button>
+        </div>
+
+    </form>
+  </div>
+</body>
+
+</html>
